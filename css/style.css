@@ -1,0 +1,22 @@
+body {
+  width: 87.5%;
+  margin:auto;
+  background-color:#f9f8fd;
+  color:#3d3d3f;
+  font-family: 'Spectral', serif;
+}
+
+p {
+  max-width:800px;
+  font-size:1.4em;
+}
+
+h1 {
+  font-size:3em;
+}
+
+a {
+  text-decoration:none;
+  color:#3d3d3f;
+  font-style:italic;
+}
