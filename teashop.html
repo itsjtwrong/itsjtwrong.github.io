@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>In Persuit of a Tea Shop</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="counter">
+          <h1>All in Persuit of a Tea Shop</h1>
+          <h2 id="main-count"></h2>
+          <h3 id="subcount"></h3>
+        </div>
+        <div class="main">
+          <p class="intro">
+            Paul Baribeau is a fantastic folk punk artist whose entire oeuvre is full of interesting and terrifying tunes from frustratingly pessimistic there is no way out kinda stuff all the way to songs that exist on a hopefulness wavelength I did not think existed in the genre. He has this hauntingly simple and important track titled Ten Things, a personal favorite but somehow I had overlooked it for so long. The premise of the song is to create these lists of ten things, things to do before you die, books to read, songs to jam out to, &c. The piece goes on to speak about lists on the topics of reasons to live and mistakes made, but the chorus is what really has the ability to leave a dent in the listener's heart. <br><br>The philosophy is simple. The only thing we can be 100% absolutely positively sure about is the fact that our time on Earth will run out. It doesn't matter if something is after, our time here is objectively finite, and if this is the case, spend as much time doing the shit you love, being with the people you love. So if possible, find those things, find what you love and would love to do, and do it. These ideals are often over complicated but that is all just semantics on how to accomplish this lifestyle.<br><br>Baribeau comes to the conclusion that the creation of such lists is helpful in keeping on track towards putting time. So I challenged my self to follow this mentality, with the last item being to open a tea shop, specifically JTea & Used Books, the most radical tea shop on this side of the galaxy. I would like to have that done by the time I am 50 so I wrote a little timer to keep me on track, as well as a sub-timer displaying the next important task. I already have three of the 50 items done, easier stuff for sure, and writing about them will come out in due time. The first big step, a road trip with people I love to all of the national parks in Colorado will be a bit of an endeavor, but a joyous one nonetheless.<br><br>So this space will work as a blog and collection of what has been learned, seen, experienced and enjoyed along the way, in hopes that more people will end up spending their time perusing enjoyment and goals as opposed to the all mighty dollar. If this journey seems at all interesting. The lists, essays, and other media will exist on wrong.design, and all the writings will be cross-posted on Plume (a really kick ass federated blogging platform).<br><br>If this is at all of interest, please, go listen to Ten Things by Paul Baribeau, and reach out to me at jtwright@knox.edu, I'd love to talk or answer questions and make connections.<br><br>All the best, JT Wright
+          </p>
+        </div>
+      </div>
+      <script>
+      const countDate = new Date("March 25 2050 00:00:00");
+
+setInterval(function timer() {
+  let now = new Date().getTime();
+  let distance = countDate - now;
+  let thingsToDo = 46;
+  
+  let days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  let timeTilNextThing = Math.floor((distance / (1000 * 60 * 60 * 24)) / thingsToDo);
+  
+  document.getElementById("main-count").innerHTML =days + " Days until JTea & Used Books should be open";
+  document.getElementById("subcount").innerHTML = timeTilNextThing + " Days til CO Roadtrip should be done"
+  
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("main-count").innerHTML = "Uh oh";
+  }
+  return timer;
+}(), 100000);</script>
+</body>
+</html>
