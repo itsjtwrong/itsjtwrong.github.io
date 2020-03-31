@@ -1,1 +1,16 @@
 .stuff-link:hover{text-decoration:underline;color:#00f;border-radius:50%!important}.essay-p{font-family:'Fengardo Neue';font-size:18px}.wrngheader{color:#0056b3;text-decoration:none!important}@media (max-width:544px){.essay-p{font-size:16px}.stuff-list{justify-content:center!important}}
+@font-face {
+    font-family: 'Fengardo Neue';
+    src: url('FengardoNeue.woff2') format('woff2'),
+        url('FengardoNeue.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fengardo Neue';
+    src: url('FengardoNeue-Black.woff2') format('woff2'),
+        url('FengardoNeue-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
